@@ -1,4 +1,4 @@
-# Embedded-heart-rate-data-logger
+# Portable Vital Signs Logger
 
 ## Overview
 
