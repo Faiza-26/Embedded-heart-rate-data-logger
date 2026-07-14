@@ -8,5 +8,11 @@ An Arduino-based embedded systems project that measures heart rate and blood oxy
 - SSD1306 OLED Display
 - MicroSD Card Module
 
-## Status
-Installed Arduino environment and connected to nano successfully
+## Status and Current Progress
+- Arduino Nano configured
+- Libraries installed
+- Blink uploaded
+- MAX30102 wired
+- I²C communication verified
+
+- To do: Heart rate algorithm, OLED display, SD logging, Python analysis
