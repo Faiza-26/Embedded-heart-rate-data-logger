@@ -44,3 +44,28 @@ The I²C scanner is one of the most useful debugging tools for embedded systems.
 - Run HeartRate example.
 - Measure BPM.
 - Understand signal quality.
+
+
+
+# July 16, 2026
+## Objective
+Obtain live heart rate readings from the MAX30102 sensor.
+## Completed
+- Successfully wired the MAX30102 to the Arduino Nano.
+- Uploaded SparkFun HeartRate example.
+- Verified the sensor appears on the I²C bus at address 0x57.
+- Successfully used an I²C scanner to diagnose communication.
+- Confirmed the scanner only detects the sensor when physical pressure is applied to the breakout board.
+## Debugging
+Observed:
+- "MAX30105 was not found."
+- I²C scanner initially detected no devices.
+- Applying pressure to the sensor caused the scanner to detect address 0x57.
+- HeartRate example produced IR = 0 and "No finger?" indicating unreliable sensor communication.
+Conclusion:
+The issue appears to be a mechanical connection between the sensor breakout board and the breadboard rather than software or wiring.
+## Next Steps
+- Purchase female-to-female jumper wires.
+- Eliminate the breadboard as a failure point.
+- Verify stable I²C communication.
+- Continue HeartRate example.
