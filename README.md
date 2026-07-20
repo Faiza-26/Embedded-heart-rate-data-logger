@@ -9,10 +9,21 @@ An Arduino-based embedded systems project that measures heart rate and blood oxy
 - MicroSD Card Module
 
 ## Status and Current Progress
-- Arduino Nano configured
-- Libraries installed
-- Blink uploaded
-- MAX30102 wired
-- I²C communication verified
 
-- To do: Heart rate algorithm, OLED display, SD logging, Python analysis
+✅ GitHub setup
+
+✅ Arduino Nano configured
+
+✅ Blink uploaded
+
+✅ OLED working
+
+✅ I²C scanner used successfully
+
+⏳ MAX30102 hardware issue
+
+⬜ Display heart rate
+
+⬜ SD card logging
+
+⬜ Python analysis

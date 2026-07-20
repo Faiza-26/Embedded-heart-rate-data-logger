@@ -69,3 +69,35 @@ The issue appears to be a mechanical connection between the sensor breakout boar
 - Eliminate the breadboard as a failure point.
 - Verify stable I²C communication.
 - Continue HeartRate example.
+
+
+
+# July 20, 2026
+## Objective
+Connect and verify operation of the SSD1306 OLED display
+---
+## Hardware
+- Arduino Nano
+- SSD1306 OLED (128x64)
+---
+## Wiring
+OLED GND → Nano GND
+OLED VCC → Nano 5V
+OLED SDA → Nano A4
+OLED SCL → Nano A5
+---
+## Debugging
+Initially the OLED remained blank
+Used an I²C scanner
+Scanner detected: 0x3C
+The Adafruit example expected: 0x3D
+Changed
+#define SCREEN_ADDRESS 0x3D
+to
+#define SCREEN_ADDRESS 0x3C
+Re-uploaded
+OLED successfully displayed the graphics demo
+---
+## Lessons Learned
+Do not assume the example code uses the correct I²C address
+Always verify addresses using an I²C scanner
